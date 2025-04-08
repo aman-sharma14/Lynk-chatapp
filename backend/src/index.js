@@ -19,7 +19,7 @@ app.use(cors({
     credentials: true //allows cookies to be sent
 }))
 app.use("/api/auth",authRoutes)
-app.use("/api/message",messageRoutes)
+app.use("/api/messages",messageRoutes)
 
 
 app.listen(PORT,()=>{

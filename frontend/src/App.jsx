@@ -9,14 +9,19 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import { useAuthStore } from './store/useAuthStore.js';
 import { Toaster } from 'react-hot-toast';
+import { useThemeStore } from './store/useThemeStore.js';
 
 const App = () => {
 
   const {authUser,checkAuth,isCheckingAuth} = useAuthStore();
+  const {theme} = useThemeStore();
 
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
+
+  
+  
 
   console.log({ authUser });
 
@@ -29,7 +34,7 @@ const App = () => {
 
 
   return (
-    <div >
+    <div data-theme={theme}>
       <Navbar/>
 
       <Routes>
