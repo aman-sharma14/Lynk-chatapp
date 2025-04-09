@@ -2,7 +2,8 @@
 
 A simple and clean real-time chat app built with the **MERN Stack**, featuring online user status, secure authentication, and beautiful UI powered by Tailwind CSS & DaisyUI.  
 
-> ✅ Built while following this tutorial: [MERN Stack Project: Realtime Chat App Tutorial - React.js & Socket.io](https://www.youtube.com/watch?v=ntKkVrQqBYY)
+> ✅ Built while following this tutorial: [MERN Stack Project: Realtime Chat App Tutorial - React.js & Socket.io](https://www.youtube.com/watch?v=ntKkVrQqBYY) by Codesistency.
+
 > A big thanks to the tutorial creator for the amazing guidance.
 
 ---
