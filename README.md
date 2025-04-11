@@ -2,6 +2,11 @@
 
 A simple and clean real-time chat app built with the **MERN Stack**, featuring online user status, secure authentication, and beautiful UI powered by Tailwind CSS & DaisyUI.  
 
+[**Live Demo**](https://lynk-r6g0.onrender.com)  
+*Note: The app may take 30–60 seconds to load due to free-tier hosting limitations.*
+
+---
+
 > ✅ Built while following this tutorial: [MERN Stack Project: Realtime Chat App Tutorial - React.js & Socket.io](https://www.youtube.com/watch?v=ntKkVrQqBYY) by Codesistency.
 
 > A big thanks to the tutorial creator for the amazing guidance.
