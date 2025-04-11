@@ -9,6 +9,8 @@ export const useChatStore = create((set,get) => ({
     selectedUser: null, //the user with whom client is chatting or selected
     isUsersLoading: false,
     isMessagesLoading : false,
+    sidebarVisibility: true,
+    setSidebar: () => set({ sidebarVisibility: !get().sidebarVisibility }),
 
     getUsers: async () => {
         set({isUsersLoading:true});

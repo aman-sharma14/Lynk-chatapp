@@ -2,13 +2,13 @@ import { X } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 import { useChatStore } from "../store/useChatStore";
 
-const ChatHeader = ({ sidebarHidden }) => {
-  const { selectedUser, setSelectedUser } = useChatStore();
+const ChatHeader = () => {
+  const { selectedUser, setSelectedUser, sidebarVisibility } = useChatStore();
   const { onlineUsers } = useAuthStore();
   const isOnline = selectedUser && onlineUsers.includes(selectedUser._id);
 
   return (
-    <div className={`p-2.5 border-b border-base-300 ${sidebarHidden ? 'pl-12' : 'pl-4'} md:pl-2.5`}> {/* Added left padding on mobile */}
+    <div className={`p-2.5 border-b border-base-300 ${sidebarVisibility ? 'pl-12' : 'pl-4'} md:pl-2.5`}> {/* Added left padding on mobile */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           {/* Avatar with online indicator */}
